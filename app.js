@@ -1,11 +1,9 @@
-const one = true;
-const zero = false;
-/* null은 빈값 진실도 거짓도 아님, 자연 발생하지 않음 */
-const blank = null;
-/*  undefind란 값을 주고 있지 않은 상태 */
-let something;
+const daysOfWeek =["월", "화", "수", "목", "금", "토"]; 
 
-console.log(one);
-console.log(zero);
-console.log(blank);
-console.log(something);
+/* array에서 아이템 받아오기 */
+console.log(daysOfWeek[0]);
+console.log(daysOfWeek);
+
+/* array 안에 요일 더 추가하기 */
+daysOfWeek.push("일");
+console.log(daysOfWeek);
