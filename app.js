@@ -1,9 +1,12 @@
-const daysOfWeek =["월", "화", "수", "목", "금", "토"]; 
+const player = {
+    name: "jun",
+    age: 19,
+    from: "korea"
+};
 
-/* array에서 아이템 받아오기 */
-console.log(daysOfWeek[0]);
-console.log(daysOfWeek);
+console.log(player);
 
-/* array 안에 요일 더 추가하기 */
-daysOfWeek.push("일");
-console.log(daysOfWeek);
+/* const는 변경이 불가하지만  const 안의 값만은 변경가능*/
+player.age = 18;
+player.firstName = "lee";
+console.log(player);
