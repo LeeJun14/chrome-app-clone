@@ -1,12 +1,18 @@
+function plus(a, b) {
+    console.log(a + b);
+}
+function minus(a, b) {
+    console.log(a - b);
+}
+
+plus(8, 60); 
+minus(100, 50);
+
 const player = {
     name: "jun",
-    age: 19,
-    from: "korea"
+    sayHello: function(otherPersonsName) {
+        console.log("Hello " + otherPersonsName + " nice to meet you!");
+    },
 };
 
-console.log(player);
-
-/* const는 변경이 불가하지만  const 안의 값만은 변경가능*/
-player.age = 18;
-player.firstName = "lee";
-console.log(player);
+player.sayHello("song");
