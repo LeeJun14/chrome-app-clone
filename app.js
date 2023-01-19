@@ -1,14 +1,11 @@
-/* const는 상수 -> 변하지 않는다. */
-const a = 5;
-const b = 2;
-/* let은 const와는 다르게 중간에 값을 변경가능 */
-let myName = "jun";
+const one = true;
+const zero = false;
+/* null은 빈값 진실도 거짓도 아님, 자연 발생하지 않음 */
+const blank = null;
+/*  undefind란 값을 주고 있지 않은 상태 */
+let something;
 
-console. log(a + b);
-console. log(a * b);
-console. log(a / b);
-console. log("hello " + myName);
-
-myName = "junyeon";
-
-console.log("your new name is " + myName);
+console.log(one);
+console.log(zero);
+console.log(blank);
+console.log(something);
