@@ -1,18 +1,24 @@
-function plus(a, b) {
-    console.log(a + b);
-}
-function minus(a, b) {
-    console.log(a - b);
-}
-
-plus(8, 60); 
-minus(100, 50);
-
-const player = {
-    name: "jun",
-    sayHello: function(otherPersonsName) {
-        console.log("Hello " + otherPersonsName + " nice to meet you!");
+const calculator = {
+    plus: function(a, b) {
+        return a + b;
     },
+    minus: function(a, b) {
+        return a - b;
+    },
+    times: function(a, b) {
+        return a * b;
+    },
+    divide: function(a, b) {
+        return a / b;
+    },
+    power: function(a, b) {
+        return a ** b;
+    }
 };
 
-player.sayHello("song");
+const plusResult = calculator.plus(5, 5);
+const minusResult = calculator.minus(plusResult, 5);
+const timesResult = calculator.times(5, minusResult);
+const divideResult = calculator.divide(timesResult, plusResult);
+const powerResult = calculator.power(divideResult, minusResult);
+
