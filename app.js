@@ -1,8 +1,10 @@
-const title1 = document.querySelector(".hello h1");
-const title2 = document.querySelectorAll(".hello h1");
+const title = document.querySelector("div.hello h1");
 
+function titleClick() {
+    title.style.color = "blue";
+}
 
-console.log(title1);
-console.log(title2);
+title.addEventListener("click", titleClick);
+
 
 
